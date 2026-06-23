@@ -36,3 +36,8 @@ footer {
     --bs-btn-active-bg: #e82700;
     --bs-btn-active-border-color: #cf2300;
 }
+
+.custom-png-shadow {
+    /* Syntax: filter: drop-shadow(horizontal-offset vertical-offset blur-radius color); */
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
+}
