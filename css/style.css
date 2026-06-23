@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --color-nav-bar: rgb(92, 0, 0);
+    --color-nav-bar: rgb(185, 0, 0);
+    --color-footer: rgb(79, 0, 0);
 
     --color-text: white;
 
-    --gradient-bg: radial-gradient(circle, rgba(184, 6, 6, 1) 0%, rgba(125, 0, 0, 1) 100%);
+    --gradient-bg: radial-gradient(circle, rgba(184, 6, 6, 1) 0%, rgb(82, 0, 0) 100%);
 }
 
 nav {
@@ -20,4 +21,23 @@ body {
     color: var(--color-text);
     background-image: var(--gradient-bg);
     font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    background-color: var(--color-footer);
+}
+
+/* Bootstrap override */
+.btn-primary {
+    --bs-btn-bg: #f75f00;
+    --bs-btn-border-color: #e55800;
+    --bs-btn-hover-bg: #d85300;
+    --bs-btn-hover-border-color: #c44b00;
+    --bs-btn-active-bg: #e82700;
+    --bs-btn-active-border-color: #cf2300;
+}
+
+.custom-png-shadow {
+    /* Syntax: filter: drop-shadow(horizontal-offset vertical-offset blur-radius color); */
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
 }
